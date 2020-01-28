@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+Project was created on the 28 of January 2020
 
 ### Project Title
-Replace the Project Title
+USbikeshare data
 
 ### Description
-Describe what your project is about and what it does
+Its the second Udacity project and it teaches us how to manipulate and access data using the pandas dat frame and python progr
+aming language. The user is prompted with some questions and upon giving the answers some data is given to the user 
 
 ### Files used
-Include the files used
+4 main files are been used 
+3 of which are csv files where the data is been stored
+and the last is a python file
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Couple of posts were very helpful especially  Youtube video post, a couple are been listed below:
+https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+https://www.youtube.com/watch?v=ErJyWO8TGoM
