@@ -188,7 +188,7 @@ def main():
     while True:
         city = get_user_input_city("Which city would you like to explore? Please select Chicago, New York City, or Washington: ")
 
-        month = get_user_input_month("Which month would you like to look at? Please select 'all', Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun: ")
+        month = get_user_input_month("What months we could choose from? Please select 'all', Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun: ")
 
         day = get_user_input_day("Which day of the week would you like to look at? Please select 'all' days or a day using the corresponding day of the week, starting with Sunday=0 and ending with Saturday: ")
         df = load_data(city, month, day)
