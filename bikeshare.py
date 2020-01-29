@@ -100,7 +100,7 @@ def time_stats(df):
     print('The Most Common Hour is ',common_hour)
 
 
-
+# important point to check run time of a particular function
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
