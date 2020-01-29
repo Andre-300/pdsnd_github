@@ -15,11 +15,12 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    
-    
-    
+
+
+
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # this function is called at the bottom in the main function
 def get_user_input_city(prompt):
     cities = ['chicago', 'new york city', 'washington']
     while True:
@@ -41,7 +42,7 @@ def get_user_input_month(prompt):
         elif input("Data can only be displayed for 'all', Jan', 'Feb', 'Mar', 'Apr', 'May', and 'Jun': "):
             if month in months:
                 return month
-            
+
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 def get_user_input_day(prompt):
@@ -50,7 +51,7 @@ def get_user_input_day(prompt):
         if day in ('all','0','1', '2', '3', '4', '5', '6'):
             return day
 
-
+# this will prit dashed lines after the execution of the function
 print('-'*40)
 
 
@@ -92,14 +93,14 @@ def time_stats(df):
     # TO DO: display the most common day of week
     common_day = df['week_day'].mode()[0]
     print('The Most Common Day is ',common_day)
-    
+
 
     # TO DO: display the most common start hour
     common_hour = df['hour'].mode()[0]
     print('The Most Common Hour is ',common_hour)
-    
 
 
+# important point to check run time of a particular function
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -185,9 +186,9 @@ def user_stats(df):
 
 def main():
     while True:
-        city = get_user_input_city("Which city would you like to explore? Please select Chicago, New York City, or Washington: ")       
+        city = get_user_input_city("Which city would you like to explore? Please select Chicago, New York City, or Washington: ")
 
-        month = get_user_input_month("Which month would you like to look at? Please select 'all', Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun: ")
+        month = get_user_input_month("What months we could choose from? Please select 'all', Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun: ")
 
         day = get_user_input_day("Which day of the week would you like to look at? Please select 'all' days or a day using the corresponding day of the week, starting with Sunday=0 and ending with Saturday: ")
         df = load_data(city, month, day)
