@@ -51,7 +51,7 @@ def get_user_input_day(prompt):
         if day in ('all','0','1', '2', '3', '4', '5', '6'):
             return day
 
-
+# this will prit dashed lines after the execution of the function
 print('-'*40)
 
 
