@@ -183,6 +183,21 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def raw_data(df):
+#function gives the user the ability to look at the first 5 rows and then gives them the option to iterate through 5 lines at a time if they'd like to inspect further.
+#used a while loop to keep iterating as long as user continues to answer "yes" or exit and move on when they don't.
+    i = 0
+    data = input("\nwould you like to view the first 5 lines of raw bikeshare data?\n").lower()
+    if data != 'yes':
+        print("skipping raw data display.")
+    else:
+        while True:
+            window = df[(i * 5):5 +(i * 5)]
+            print(window)
+            i += 1
+            five_raw = input("\nWould you like to see the next 5 rows of raw data?\n")
+            if five_raw.lower() != 'yes':
+                break
 
 def main():
     while True:
@@ -197,6 +212,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
