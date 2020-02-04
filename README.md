@@ -9,6 +9,7 @@ USbikeshare data
 Its the second Udacity project and it teaches us how to manipulate and access data using the pandas dat frame and python progr
 aming language. The user is prompted with some questions and upon giving the answers some data is given to the user.
 Data been used here are obtained from the internet. 
+### How to use VIM editor in git.
 
 ### Files used
 4 main files are been used 
