@@ -1,3 +1,7 @@
+## Data Analysis.
+Data analysis is a process of inspecting, cleansing, transforming and modeling data with the goal of discovering useful information,
+informing conclusion and supporting decision-making.
+
 ### Date created
 Project was created on the 28 of January 2020
 Modification on this file wasdone on the 4th of February
