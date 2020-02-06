@@ -8,7 +8,15 @@ USbikeshare data
 ### Description
 Its the second Udacity project and it teaches us how to manipulate and access data using the pandas dat frame and python progr
 aming language. The user is prompted with some questions and upon giving the answers some data is given to the user.
-Data been used here are obtained from the internet. 
+Data been used here are obtained from the internet.
+
+### Data
+The data been used here come from 3 states and these were obtained from the internet the states are 
+* New york
+* Chicago
+* Washington
+The data is been stored in csv files.
+ 
 ### How to use VIM editor in git.
 
 ### Files used
